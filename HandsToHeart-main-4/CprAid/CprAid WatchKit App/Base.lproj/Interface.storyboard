@@ -12,12 +12,12 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CprAid_WatchKit_App" customModuleProvider="target">
                     <items>
                         <imageView alignment="left" id="BMI-xm-ifQ"/>
-                        <button width="1" alignment="left" title="Button" id="Rif-EM-otX">
+                        <button width="1" alignment="left" title="Start CPR" id="Rif-EM-otX">
                             <connections>
                                 <segue destination="aav-6g-UWB" kind="push" id="4Jy-0F-lr8"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Button" id="e6E-R4-QeC"/>
+                        <button width="1" alignment="left" title="Call 911" id="e6E-R4-QeC"/>
                     </items>
                 </controller>
             </objects>
@@ -107,7 +107,7 @@
                 <controller id="aav-6g-UWB">
                     <items>
                         <label width="136" alignment="left" text="Label" id="hmi-st-evZ"/>
-                        <button width="1" alignment="left" title="Button" id="NSP-Zy-vYw">
+                        <button width="1" alignment="left" title="adult " id="NSP-Zy-vYw">
                             <connections>
                                 <segue destination="abp-8O-Ct7" kind="push" id="14p-cJ-fm9"/>
                             </connections>
