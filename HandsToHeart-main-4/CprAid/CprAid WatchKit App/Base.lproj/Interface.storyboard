@@ -13,11 +13,14 @@
                     <items>
                         <imageView alignment="left" id="BMI-xm-ifQ"/>
                         <button width="1" alignment="left" title="Start CPR" id="Rif-EM-otX">
+                            <color key="backgroundColor" red="1" green="0.1764705882352941" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="aav-6g-UWB" kind="push" id="4Jy-0F-lr8"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Call 911" id="e6E-R4-QeC"/>
+                        <button width="1" alignment="left" title="Call 911" id="e6E-R4-QeC">
+                            <color key="backgroundColor" red="1" green="0.1764705882352941" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
                     </items>
                 </controller>
             </objects>
@@ -129,18 +132,21 @@
             <objects>
                 <controller id="aav-6g-UWB">
                     <items>
-                        <label width="136" alignment="left" text="I am performing CPr on:" textAlignment="center" numberOfLines="0" id="hmi-st-evZ"/>
+                        <label width="136" alignment="left" text="I am performing CPR on:" textAlignment="center" numberOfLines="0" id="hmi-st-evZ"/>
                         <button width="1" alignment="left" title="An infant" id="NSP-Zy-vYw">
+                            <color key="backgroundColor" red="1" green="0.45098039215686275" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="abp-8O-Ct7" kind="push" id="14p-cJ-fm9"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="A child" id="Vrz-pY-2pW">
+                            <color key="backgroundColor" red="1" green="0.31372549019607843" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="3Zf-0W-0Qt" kind="push" id="HIy-Kr-YxJ"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="An Adult" id="Pg8-0B-uDp">
+                            <color key="backgroundColor" red="1" green="0.1764705882352941" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="lbe-9U-v6Q" kind="push" id="HZP-Gt-G7D"/>
                             </connections>
