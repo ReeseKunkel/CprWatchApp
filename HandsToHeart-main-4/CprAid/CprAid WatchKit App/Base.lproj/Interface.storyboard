@@ -60,7 +60,11 @@
                 <controller id="abp-8O-Ct7">
                     <items>
                         <imageView alignment="left" id="ANy-VA-9I2"/>
-                        <button width="1" alignment="left" title="Button" id="qCr-9H-Hn0"/>
+                        <button width="1" alignment="left" title="Stop Compressions" id="qCr-9H-Hn0">
+                            <connections>
+                                <segue destination="YeF-3B-Qj6" kind="push" id="jbg-rx-ClC"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
@@ -72,11 +76,26 @@
                 <controller id="3Zf-0W-0Qt">
                     <items>
                         <imageView alignment="left" id="VSu-w2-HfS"/>
-                        <button width="1" alignment="left" title="Button" id="Ho6-yw-MMJ"/>
+                        <button width="1" alignment="left" title="Stop Compressions" id="Ho6-yw-MMJ">
+                            <connections>
+                                <segue destination="YeF-3B-Qj6" kind="push" id="IBR-HR-wBF"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
             <point key="canvasLocation" x="530" y="406"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="gpy-ma-71H">
+            <objects>
+                <controller id="YeF-3B-Qj6">
+                    <items>
+                        <label alignment="left" text="end screen" id="5gg-rr-BjX"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="528" y="723"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="htK-oE-gA2">
@@ -84,7 +103,11 @@
                 <controller id="lbe-9U-v6Q">
                     <items>
                         <imageView alignment="left" id="90C-hG-0WS"/>
-                        <button width="1" alignment="left" title="Button" id="DiV-nc-2f0"/>
+                        <button width="1" alignment="left" title="Stop Compressions" id="DiV-nc-2f0">
+                            <connections>
+                                <segue destination="YeF-3B-Qj6" kind="push" id="nZp-G5-9DF"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
@@ -106,18 +129,18 @@
             <objects>
                 <controller id="aav-6g-UWB">
                     <items>
-                        <label width="136" alignment="left" text="Label" id="hmi-st-evZ"/>
-                        <button width="1" alignment="left" title="adult " id="NSP-Zy-vYw">
+                        <label width="136" alignment="left" text="I am performing CPr on:" textAlignment="center" numberOfLines="0" id="hmi-st-evZ"/>
+                        <button width="1" alignment="left" title="An infant" id="NSP-Zy-vYw">
                             <connections>
                                 <segue destination="abp-8O-Ct7" kind="push" id="14p-cJ-fm9"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Button" id="Vrz-pY-2pW">
+                        <button width="1" alignment="left" title="A child" id="Vrz-pY-2pW">
                             <connections>
                                 <segue destination="3Zf-0W-0Qt" kind="push" id="HIy-Kr-YxJ"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Button" id="Pg8-0B-uDp">
+                        <button width="1" alignment="left" title="An Adult" id="Pg8-0B-uDp">
                             <connections>
                                 <segue destination="lbe-9U-v6Q" kind="push" id="HZP-Gt-G7D"/>
                             </connections>
@@ -128,4 +151,7 @@
             <point key="canvasLocation" x="416" y="68"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="nZp-G5-9DF"/>
+    </inferredMetricsTieBreakers>
 </document>
