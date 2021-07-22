@@ -71,7 +71,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="216" y="406"/>
+            <point key="canvasLocation" x="187" y="423"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="Fu9-FO-fhU">
@@ -95,7 +95,7 @@
             <objects>
                 <controller id="YeF-3B-Qj6">
                     <items>
-                        <label width="136" alignment="left" text="What to check for now:" textAlignment="center" numberOfLines="2" id="5gg-rr-BjX"/>
+                        <label width="136" alignment="center" text="What to check for now:" textAlignment="center" numberOfLines="2" id="5gg-rr-BjX"/>
                         <button width="1" alignment="left" title="Check for secodary wounds " id="Lcf-Fc-OTa">
                             <color key="backgroundColor" red="1" green="0.31372549020000001" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </button>
@@ -105,7 +105,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="528" y="723"/>
+            <point key="canvasLocation" x="530" y="767"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="htK-oE-gA2">
@@ -125,45 +125,24 @@
             <point key="canvasLocation" x="857" y="406"/>
         </scene>
         <!--Interface Controller-->
-        <scene sceneID="Lxo-W3-C03">
-            <objects>
-                <controller id="3JA-ZD-WNq">
-                    <items>
-                        <label width="136" height="39" alignment="left" text="I am performing CPR on:" numberOfLines="2" id="TMc-st-bZV"/>
-                        <button width="1" alignment="left" title="Infant" id="IvJ-Jb-K6o">
-                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="backgroundColor" red="1" green="0.45098039215686275" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
-                        </button>
-                        <button width="1" alignment="left" title="Child" id="hbu-Kp-2le">
-                            <color key="backgroundColor" red="1" green="0.31372549019607843" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
-                        </button>
-                        <button width="1" alignment="left" title="Adult" id="1za-ZG-qnx">
-                            <color key="backgroundColor" red="1" green="0.1764705882352941" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
-                        </button>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="416" y="74.5"/>
-        </scene>
-        <!--Interface Controller-->
         <scene sceneID="FJl-Gp-19a">
             <objects>
                 <controller id="aav-6g-UWB">
                     <items>
-                        <label width="136" alignment="left" text="I am performing CPR on:" textAlignment="center" numberOfLines="0" id="hmi-st-evZ"/>
-                        <button width="130" height="34" alignment="left" title="An infant" id="NSP-Zy-vYw">
+                        <label width="136" alignment="center" text="I am performing CPR on:" textAlignment="center" numberOfLines="0" id="hmi-st-evZ"/>
+                        <button width="130" height="34" alignment="center" title="An infant" id="NSP-Zy-vYw">
                             <color key="backgroundColor" red="1" green="0.45098039215686275" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="abp-8O-Ct7" kind="push" id="14p-cJ-fm9"/>
                             </connections>
                         </button>
-                        <button width="131" height="30" alignment="left" title="A child" id="Vrz-pY-2pW">
+                        <button width="131" height="30" alignment="center" title="A child" id="Vrz-pY-2pW">
                             <color key="backgroundColor" red="1" green="0.31372549019607843" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="3Zf-0W-0Qt" kind="push" id="HIy-Kr-YxJ"/>
                             </connections>
                         </button>
-                        <button width="133" height="30" alignment="left" title="An Adult" id="Pg8-0B-uDp">
+                        <button width="133" height="30" alignment="center" title="An Adult" id="Pg8-0B-uDp">
                             <color key="backgroundColor" red="1" green="0.1764705882352941" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="lbe-9U-v6Q" kind="push" id="HZP-Gt-G7D"/>
