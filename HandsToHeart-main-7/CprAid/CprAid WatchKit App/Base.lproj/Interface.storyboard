@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CprAid_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView alignment="left" id="BMI-xm-ifQ"/>
+                        <button width="1" alignment="left" title="Button" id="Rif-EM-otX"/>
+                        <button width="1" alignment="left" title="Button" id="e6E-R4-QeC"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="96" y="68"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="-76" y="1198"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="CprAid_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="897"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="CprAid_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="315" y="1254"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="txA-2e-SWL">
+            <objects>
+                <controller id="abp-8O-Ct7">
+                    <items>
+                        <imageView alignment="left" id="ANy-VA-9I2"/>
+                        <button width="1" alignment="left" title="Button" id="qCr-9H-Hn0"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="216" y="406"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Fu9-FO-fhU">
+            <objects>
+                <controller id="3Zf-0W-0Qt">
+                    <items>
+                        <imageView alignment="left" id="VSu-w2-HfS"/>
+                        <button width="1" alignment="left" title="Button" id="Ho6-yw-MMJ"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="530" y="406"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="htK-oE-gA2">
+            <objects>
+                <controller id="lbe-9U-v6Q">
+                    <items>
+                        <imageView alignment="left" id="90C-hG-0WS"/>
+                        <button width="1" alignment="left" title="Button" id="DiV-nc-2f0"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="857" y="406"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Lxo-W3-C03">
+            <objects>
+                <controller id="3JA-ZD-WNq">
+                    <items>
+                        <button width="1" alignment="left" title="Button" id="IvJ-Jb-K6o"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="416" y="68"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="FJl-Gp-19a">
+            <objects>
+                <controller id="aav-6g-UWB">
+                    <items>
+                        <label width="136" alignment="left" text="Label" id="hmi-st-evZ"/>
+                        <button width="1" alignment="left" title="Button" id="NSP-Zy-vYw"/>
+                        <button width="1" alignment="left" title="Button" id="Vrz-pY-2pW"/>
+                        <button width="1" alignment="left" title="Button" id="Pg8-0B-uDp"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="416" y="68"/>
+        </scene>
+    </scenes>
+</document>

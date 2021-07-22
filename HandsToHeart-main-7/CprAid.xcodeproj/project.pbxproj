@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C75234DB26A1FA1000D3B7A0 /* CprAid WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C75234DA26A1FA1000D3B7A0 /* CprAid WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C75234E126A1FA1000D3B7A0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75234DF26A1FA1000D3B7A0 /* Interface.storyboard */; };
+		C75234E326A1FA1700D3B7A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75234E226A1FA1700D3B7A0 /* Assets.xcassets */; };
+		C75234EA26A1FA1800D3B7A0 /* CprAid WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C75234E926A1FA1800D3B7A0 /* CprAid WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C75234EF26A1FA1800D3B7A0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75234EE26A1FA1800D3B7A0 /* InterfaceController.swift */; };
+		C75234F126A1FA1800D3B7A0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75234F026A1FA1800D3B7A0 /* ExtensionDelegate.swift */; };
+		C75234F326A1FA1800D3B7A0 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75234F226A1FA1800D3B7A0 /* NotificationController.swift */; };
+		C75234F526A1FA1800D3B7A0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75234F426A1FA1800D3B7A0 /* ComplicationController.swift */; };
+		C75234F726A1FA1B00D3B7A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75234F626A1FA1B00D3B7A0 /* Assets.xcassets */; };
+		C752350326A1FA1B00D3B7A0 /* CprAidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C752350226A1FA1B00D3B7A0 /* CprAidTests.swift */; };
+		C752350E26A1FA1B00D3B7A0 /* CprAidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C752350D26A1FA1B00D3B7A0 /* CprAidUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C75234DC26A1FA1000D3B7A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C75234D026A1FA0F00D3B7A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C75234D926A1FA0F00D3B7A0;
+			remoteInfo = "CprAid WatchKit App";
+		};
+		C75234EB26A1FA1800D3B7A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C75234D026A1FA0F00D3B7A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C75234E826A1FA1800D3B7A0;
+			remoteInfo = "CprAid WatchKit Extension";
+		};
+		C75234FF26A1FA1B00D3B7A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C75234D026A1FA0F00D3B7A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C75234E826A1FA1800D3B7A0;
+			remoteInfo = "CprAid WatchKit Extension";
+		};
+		C752350A26A1FA1B00D3B7A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C75234D026A1FA0F00D3B7A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C75234D926A1FA0F00D3B7A0;
+			remoteInfo = "CprAid WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C752351526A1FA1B00D3B7A0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C75234EA26A1FA1800D3B7A0 /* CprAid WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C752351926A1FA1B00D3B7A0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C75234DB26A1FA1000D3B7A0 /* CprAid WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C75234D626A1FA0F00D3B7A0 /* CprAid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CprAid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75234DA26A1FA1000D3B7A0 /* CprAid WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CprAid WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75234E026A1FA1000D3B7A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C75234E226A1FA1700D3B7A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C75234E426A1FA1800D3B7A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C75234E926A1FA1800D3B7A0 /* CprAid WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CprAid WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75234EE26A1FA1800D3B7A0 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C75234F026A1FA1800D3B7A0 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C75234F226A1FA1800D3B7A0 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C75234F426A1FA1800D3B7A0 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C75234F626A1FA1B00D3B7A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C75234F826A1FA1B00D3B7A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C75234F926A1FA1B00D3B7A0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C75234FE26A1FA1B00D3B7A0 /* CprAidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CprAidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C752350226A1FA1B00D3B7A0 /* CprAidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CprAidTests.swift; sourceTree = "<group>"; };
+		C752350426A1FA1B00D3B7A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C752350926A1FA1B00D3B7A0 /* CprAidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CprAidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C752350D26A1FA1B00D3B7A0 /* CprAidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CprAidUITests.swift; sourceTree = "<group>"; };
+		C752350F26A1FA1B00D3B7A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C75234E626A1FA1800D3B7A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75234FB26A1FA1B00D3B7A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C752350626A1FA1B00D3B7A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C75234CF26A1FA0F00D3B7A0 = {
+			isa = PBXGroup;
+			children = (
+				C75234DE26A1FA1000D3B7A0 /* CprAid WatchKit App */,
+				C75234ED26A1FA1800D3B7A0 /* CprAid WatchKit Extension */,
+				C752350126A1FA1B00D3B7A0 /* CprAidTests */,
+				C752350C26A1FA1B00D3B7A0 /* CprAidUITests */,
+				C75234D726A1FA0F00D3B7A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C75234D726A1FA0F00D3B7A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C75234D626A1FA0F00D3B7A0 /* CprAid.app */,
+				C75234DA26A1FA1000D3B7A0 /* CprAid WatchKit App.app */,
+				C75234E926A1FA1800D3B7A0 /* CprAid WatchKit Extension.appex */,
+				C75234FE26A1FA1B00D3B7A0 /* CprAidTests.xctest */,
+				C752350926A1FA1B00D3B7A0 /* CprAidUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C75234DE26A1FA1000D3B7A0 /* CprAid WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C75234DF26A1FA1000D3B7A0 /* Interface.storyboard */,
+				C75234E226A1FA1700D3B7A0 /* Assets.xcassets */,
+				C75234E426A1FA1800D3B7A0 /* Info.plist */,
+			);
+			path = "CprAid WatchKit App";
+			sourceTree = "<group>";
+		};
+		C75234ED26A1FA1800D3B7A0 /* CprAid WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C75234EE26A1FA1800D3B7A0 /* InterfaceController.swift */,
+				C75234F026A1FA1800D3B7A0 /* ExtensionDelegate.swift */,
+				C75234F226A1FA1800D3B7A0 /* NotificationController.swift */,
+				C75234F426A1FA1800D3B7A0 /* ComplicationController.swift */,
+				C75234F626A1FA1B00D3B7A0 /* Assets.xcassets */,
+				C75234F826A1FA1B00D3B7A0 /* Info.plist */,
+				C75234F926A1FA1B00D3B7A0 /* PushNotificationPayload.apns */,
+			);
+			path = "CprAid WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C752350126A1FA1B00D3B7A0 /* CprAidTests */ = {
+			isa = PBXGroup;
+			children = (
+				C752350226A1FA1B00D3B7A0 /* CprAidTests.swift */,
+				C752350426A1FA1B00D3B7A0 /* Info.plist */,
+			);
+			path = CprAidTests;
+			sourceTree = "<group>";
+		};
+		C752350C26A1FA1B00D3B7A0 /* CprAidUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C752350D26A1FA1B00D3B7A0 /* CprAidUITests.swift */,
+				C752350F26A1FA1B00D3B7A0 /* Info.plist */,
+			);
+			path = CprAidUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C75234D526A1FA0F00D3B7A0 /* CprAid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C752351A26A1FA1B00D3B7A0 /* Build configuration list for PBXNativeTarget "CprAid" */;
+			buildPhases = (
+				C75234D426A1FA0F00D3B7A0 /* Resources */,
+				C752351926A1FA1B00D3B7A0 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C75234DD26A1FA1000D3B7A0 /* PBXTargetDependency */,
+			);
+			name = CprAid;
+			productName = CprAid;
+			productReference = C75234D626A1FA0F00D3B7A0 /* CprAid.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		C75234D926A1FA0F00D3B7A0 /* CprAid WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C752351626A1FA1B00D3B7A0 /* Build configuration list for PBXNativeTarget "CprAid WatchKit App" */;
+			buildPhases = (
+				C75234D826A1FA0F00D3B7A0 /* Resources */,
+				C752351526A1FA1B00D3B7A0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C75234EC26A1FA1800D3B7A0 /* PBXTargetDependency */,
+			);
+			name = "CprAid WatchKit App";
+			productName = "CprAid WatchKit App";
+			productReference = C75234DA26A1FA1000D3B7A0 /* CprAid WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C75234E826A1FA1800D3B7A0 /* CprAid WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C752351226A1FA1B00D3B7A0 /* Build configuration list for PBXNativeTarget "CprAid WatchKit Extension" */;
+			buildPhases = (
+				C75234E526A1FA1800D3B7A0 /* Sources */,
+				C75234E626A1FA1800D3B7A0 /* Frameworks */,
+				C75234E726A1FA1800D3B7A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CprAid WatchKit Extension";
+			productName = "CprAid WatchKit Extension";
+			productReference = C75234E926A1FA1800D3B7A0 /* CprAid WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		C75234FD26A1FA1B00D3B7A0 /* CprAidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C752351D26A1FA1B00D3B7A0 /* Build configuration list for PBXNativeTarget "CprAidTests" */;
+			buildPhases = (
+				C75234FA26A1FA1B00D3B7A0 /* Sources */,
+				C75234FB26A1FA1B00D3B7A0 /* Frameworks */,
+				C75234FC26A1FA1B00D3B7A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C752350026A1FA1B00D3B7A0 /* PBXTargetDependency */,
+			);
+			name = CprAidTests;
+			productName = CprAidTests;
+			productReference = C75234FE26A1FA1B00D3B7A0 /* CprAidTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C752350826A1FA1B00D3B7A0 /* CprAidUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C752352026A1FA1B00D3B7A0 /* Build configuration list for PBXNativeTarget "CprAidUITests" */;
+			buildPhases = (
+				C752350526A1FA1B00D3B7A0 /* Sources */,
+				C752350626A1FA1B00D3B7A0 /* Frameworks */,
+				C752350726A1FA1B00D3B7A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C752350B26A1FA1B00D3B7A0 /* PBXTargetDependency */,
+			);
+			name = CprAidUITests;
+			productName = CprAidUITests;
+			productReference = C752350926A1FA1B00D3B7A0 /* CprAidUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C75234D026A1FA0F00D3B7A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C75234D526A1FA0F00D3B7A0 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C75234D926A1FA0F00D3B7A0 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C75234E826A1FA1800D3B7A0 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C75234FD26A1FA1B00D3B7A0 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C75234E826A1FA1800D3B7A0;
+					};
+					C752350826A1FA1B00D3B7A0 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C75234D926A1FA0F00D3B7A0;
+					};
+				};
+			};
+			buildConfigurationList = C75234D326A1FA0F00D3B7A0 /* Build configuration list for PBXProject "CprAid" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C75234CF26A1FA0F00D3B7A0;
+			productRefGroup = C75234D726A1FA0F00D3B7A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C75234D526A1FA0F00D3B7A0 /* CprAid */,
+				C75234D926A1FA0F00D3B7A0 /* CprAid WatchKit App */,
+				C75234E826A1FA1800D3B7A0 /* CprAid WatchKit Extension */,
+				C75234FD26A1FA1B00D3B7A0 /* CprAidTests */,
+				C752350826A1FA1B00D3B7A0 /* CprAidUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C75234D426A1FA0F00D3B7A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75234D826A1FA0F00D3B7A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75234E326A1FA1700D3B7A0 /* Assets.xcassets in Resources */,
+				C75234E126A1FA1000D3B7A0 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75234E726A1FA1800D3B7A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75234F726A1FA1B00D3B7A0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75234FC26A1FA1B00D3B7A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C752350726A1FA1B00D3B7A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C75234E526A1FA1800D3B7A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75234F326A1FA1800D3B7A0 /* NotificationController.swift in Sources */,
+				C75234F526A1FA1800D3B7A0 /* ComplicationController.swift in Sources */,
+				C75234F126A1FA1800D3B7A0 /* ExtensionDelegate.swift in Sources */,
+				C75234EF26A1FA1800D3B7A0 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75234FA26A1FA1B00D3B7A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C752350326A1FA1B00D3B7A0 /* CprAidTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C752350526A1FA1B00D3B7A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C752350E26A1FA1B00D3B7A0 /* CprAidUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C75234DD26A1FA1000D3B7A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C75234D926A1FA0F00D3B7A0 /* CprAid WatchKit App */;
+			targetProxy = C75234DC26A1FA1000D3B7A0 /* PBXContainerItemProxy */;
+		};
+		C75234EC26A1FA1800D3B7A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C75234E826A1FA1800D3B7A0 /* CprAid WatchKit Extension */;
+			targetProxy = C75234EB26A1FA1800D3B7A0 /* PBXContainerItemProxy */;
+		};
+		C752350026A1FA1B00D3B7A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C75234E826A1FA1800D3B7A0 /* CprAid WatchKit Extension */;
+			targetProxy = C75234FF26A1FA1B00D3B7A0 /* PBXContainerItemProxy */;
+		};
+		C752350B26A1FA1B00D3B7A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C75234D926A1FA0F00D3B7A0 /* CprAid WatchKit App */;
+			targetProxy = C752350A26A1FA1B00D3B7A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C75234DF26A1FA1000D3B7A0 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C75234E026A1FA1000D3B7A0 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C752351026A1FA1B00D3B7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C752351126A1FA1B00D3B7A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C752351326A1FA1B00D3B7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CprAid WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Evie-Fontaine.CprAid.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		C752351426A1FA1B00D3B7A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CprAid WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Evie-Fontaine.CprAid.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		C752351726A1FA1B00D3B7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = CprAid_WatchKit_Extension;
+				INFOPLIST_FILE = "CprAid WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Evie-Fontaine.CprAid.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		C752351826A1FA1B00D3B7A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = CprAid_WatchKit_Extension;
+				INFOPLIST_FILE = "CprAid WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Evie-Fontaine.CprAid.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		C752351B26A1FA1B00D3B7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Evie-Fontaine.CprAid";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C752351C26A1FA1B00D3B7A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Evie-Fontaine.CprAid";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C752351E26A1FA1B00D3B7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CprAidTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Evie-Fontaine.CprAidTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CprAid WatchKit Extension.appex/CprAid WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		C752351F26A1FA1B00D3B7A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CprAidTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Evie-Fontaine.CprAidTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CprAid WatchKit Extension.appex/CprAid WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		C752352126A1FA1B00D3B7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CprAidUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Evie-Fontaine.CprAidUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "CprAid WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		C752352226A1FA1B00D3B7A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CprAidUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Evie-Fontaine.CprAidUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "CprAid WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C75234D326A1FA0F00D3B7A0 /* Build configuration list for PBXProject "CprAid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C752351026A1FA1B00D3B7A0 /* Debug */,
+				C752351126A1FA1B00D3B7A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C752351226A1FA1B00D3B7A0 /* Build configuration list for PBXNativeTarget "CprAid WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C752351326A1FA1B00D3B7A0 /* Debug */,
+				C752351426A1FA1B00D3B7A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C752351626A1FA1B00D3B7A0 /* Build configuration list for PBXNativeTarget "CprAid WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C752351726A1FA1B00D3B7A0 /* Debug */,
+				C752351826A1FA1B00D3B7A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C752351A26A1FA1B00D3B7A0 /* Build configuration list for PBXNativeTarget "CprAid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C752351B26A1FA1B00D3B7A0 /* Debug */,
+				C752351C26A1FA1B00D3B7A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C752351D26A1FA1B00D3B7A0 /* Build configuration list for PBXNativeTarget "CprAidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C752351E26A1FA1B00D3B7A0 /* Debug */,
+				C752351F26A1FA1B00D3B7A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C752352026A1FA1B00D3B7A0 /* Build configuration list for PBXNativeTarget "CprAidUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C752352126A1FA1B00D3B7A0 /* Debug */,
+				C752352226A1FA1B00D3B7A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C75234D026A1FA0F00D3B7A0 /* Project object */;
+}
